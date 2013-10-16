@@ -1,0 +1,111 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Fais parler le clown</title>
+        <meta name="description" content="Le clown prend les appels. Envoie-lui un SMS ou laisse-lui un message.">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+        <script src="/socket.io/socket.io.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+        <div class="container">
+            <!-- <div class="header">
+                <ul class="nav nav-pills pull-right">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <h3 class="text-muted">BisouBabaye</h3>
+            </div>
+        -->
+
+            <div class="jumbotron">
+                <h1>Fais parler le clown</h1>
+                <img class="clown-img mouth-closed" src="images/clown.png" />
+                <img class="clown-img mouth-open hide" src="images/clown2.png" />
+                <p class="lead">Le clown prend les appels.<br />Envoi-lui un SMS ou laisse-lui un message.</p>
+
+                <!--<p class="lead">Aide le clown à se sentir mieux; <br />laisse-lui un message.</p>-->
+                <p><a class="btn btn-lg btn-warning" href="tel://14506007387">450-600-PEUR</a></p>
+            </div>
+            
+            <div class="row marketing">
+                <div class="col-lg-12 events">
+                	<a class="btn prev">
+                		<span class="glyphicon glyphicon-chevron-right"></span>
+                	</a>
+                	<a class="btn next">
+                		<span class="glyphicon glyphicon-chevron-left"></span>
+                	</a>
+
+                	<div class="event-container">
+	                	
+	    	        </div>
+                </div>
+            </div>
+			
+            <div class="footer">
+                <p><span class="glyphicon glyphicon-fire"></span> Une production #chaletdautomne</p>
+            </div>
+
+        </div>
+        <div id="skeletons" class="hide">
+        	<div class="skeleton event type-sms">
+	        	<div class="event type-sms">
+	        		<h4><span class="glyphicon glyphicon-phone"></span> Un SMS de {{From}}</h4>
+	            	<p>{{Data}}</p>
+	            </div>
+        	</div>
+        	<div class="skeleton event type-voice">
+	        	<div class="event type-voice" data-media-url="{{Data}}">
+	        		<h4><span class="glyphicon glyphicon-earphone"></span> Un appel de {{From}}</h4>
+	            </div>
+        	</div>
+        	<div class="skeleton event type-mms">
+        		<div class="event type-mms">
+	        		<h4><span class="glyphicon glyphicon-picture"></span> Une image de {{From}}</h4>
+	            	<p><img src="{{Data}}" alt="" /></p>
+	            </div>
+        	</div>
+        	
+        </div>
+        <div class="audio hide" id="audio-player">
+
+        </div>
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/jquery/jquery.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-44889748-1');ga('send','pageview');
+        </script>
+
+        <!-- build:js scripts/main.js -->
+        <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

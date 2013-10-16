@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+	<Play>http://www.zloche.net:8084/api/voice/?text=Tu%20as%20rejoins%20la%20boite%20vocale%20du%20clown%20triste.</Play>
+    <Record method="GET" timeout="45" transcribe="false" />
+</Response>
