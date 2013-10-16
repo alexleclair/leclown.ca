@@ -1,14 +1,23 @@
-leclown.ca
+LeClown.ca
+=========
+
+LeClown est né d'un long-weekend au chalet.
+
+Il y avait un clown vraiment creepy et plein de blagues s'en sont issues.
+
+Voici donc un microsite rappelant ce weekend au chalet.
+
+Ce qui est requis:
 ==========
 
-Le Clown
 
-Un projet rapide d'une soirée suivant un gros inside dans un chalet. 
-Fais parler le clown triste.
+- NodeJS
+- Socket.IO
+- Redis
+- espeak
+- sox
 
-Ça requiert:
-NodeJS
-Socket.IO
-Redis
-espeak
-sox
+Remerciements
+====
+[David Mongeau-Petitpas](https://github.com/dmongeau) pour les conseils.
+    
